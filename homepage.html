@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="The website is designed for sharing my travel stories and experience if travelling the cities with their attractions and the best time to visit the destination.">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./CSS/homeStyle.css">
+
+    <title>Travel Stories</title>
+</head>
+<body>
+<div class="container-fluid">
+
+    <!-- header and nav -->
+    <header class="container-fluid" id="h-wrapped-container">
+        <div id="logo">
+            <img src="./images/Time-to-travel.png" alt="logo" width="100" height="100">
+        </div>
+        <div id="header-text">
+            <h1>Travel Stories</h1>
+        </div>
+        <nav id="nav-bar">
+            <form class="form-inline ml-auto nav-btn" id="search" action="https://www.google.com/search" target="_blank" method="get">
+                <input type="text" class="'form-control mr-2"
+                    placeholder="Search..." name="q">
+                        <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            
+            <div class="nav-btn" id="about">
+                <a class="nav-item" data-bs-toggle="collapse" data-bs-target="#text-about-me"role="button" href="#text-about-me">About</a>
+                    <div class="collapse" id="text-about-me">
+                        <div class="card card-body">
+                            <p>Hello, I am Chris.</p>
+                            <p>Welcome to my website.</p>
+                    </div>
+                    </div>
+            </div>
+            <div class="nav-btn" id="contact">
+                <a class="nav-item" type="button" data-bs-toggle="collapse" data-bs-target="#text-contact-me" aria-expanded="false" aria-controls="#text-contact-me" href="#text-contact-me">Contact</a></div>
+                 <div class="collapse collapse-horizontal" id="text-contact-me">
+                    <div class="card card-body" style="width: 250px;">
+                        <ul>
+                            <li id="email"><i class="fa-solid fa-envelope"></i><a href="mailto:example@gmail.com"> Send email</a></li>
+                            <li id="telphone"><i class="fa-solid fa-phone"></i><span>852+12345678</span></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            <div class="nav-btn" id="destination">
+                <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="select the city">
+                <a class="nav-item btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Photo gallery</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="tokyo-page.html">Tokyo</a><hr></li>
+                        <li><a class="dropdown-item" href="london-page.html">London</a><hr></li>
+                        <li><a class="dropdown-item" href="new-york-page.html">New York</a><hr></li>
+                        <li><a class="dropdown-item" href="egypt-page.html">Egypt</a></li>
+                    </ul>
+                </span>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- main and section -->
+    <main class="container-fluid" id="main-container">
+
+    <!-- section at left side -->
+        <div class="row row-cols-3">
+             <section class="col-2" id="sectionLeft">  
+                <nav id="navbar-items" class="h-100 flex-column">
+                    <nav class="nav nav-pills flex-column item1 active">
+                        <a class="nav-link" href="#item-1" id="btnbar">Tokyo</a>
+                    </nav>
+                    <nav class="nav nav-pills flex-column item2">
+                        <a class="nav-link" href="#item-2" id="btnbar">London</a>
+                    </nav>
+                        <nav class="nav nav-pills flex-column item3">
+                            <a class="nav-link" href="#item-3" id="btnbar">New York</a>
+                        </nav>
+                                <nav class="nav nav-pills flex-column item4">
+                                    <a class="nav-link" href="#item-4" id="btnbar">Egypt</a>
+                                </nav>
+                </nav>   
+                
+    <!-- section at left side 2 -->
+
+                    <section class="col-2" id="sectionLeft2">
+                        <img src="./images/Welcome2.png" alt="welcome" id="welcome-text">
+                    </section>
+                </section>
+                
+                
+            
+    <!-- section at center -->
+            <section class="col-7" id="sectionCenter">  
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="./images/JP-photo/JP-photo-1.jpg" class="d-block w-100 rounded-4" alt="Tokyo-photo-1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>TOKYO</h5>
+                                </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./images/UK-photo/UK-photo-1.jpg" class="d-block w-100 rounded-4" alt="London-photo-1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>LONDON</h5>
+                                </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./images/US-photo/US-photo-1.jpg" class="d-block w-100 rounded-4" alt="NewYork-photo-1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>NEW YORK</h5>
+                                </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./images/AF-photo/AF-photo-4.jpg" class="d-block w-100 rounded-4" alt="Egypt-photo-1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>EGYPT</h5>
+                                </div>
+                        </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div> 
+            </section>   
+
+    <!-- section at right side -->
+            <section class="col-3" id="sectionRight">
+                <div data-bs-spy="scroll" data-bs-target="#navbar-items" data-bs-smooth-scroll="true" class="scrollspy-2" tabindex="0">
+                    <div class="item-list" id="item-1">
+                        <h5>Tokyo</h5>
+                            <p>Tokyo, officially the Tokyo Metropolis, is the capital and most populous city in Japan. With a population of over 14 million in the city proper in 2023, it is one of the most populous urban areas in the world. The Greater Tokyo Area, which includes Tokyo and parts of six neighboring prefectures, is the most populous metropolitan area in the world, with 41 million residents as of 2024.</p>
+                            <br><hr><br><br>
+                    </div>
+                    <div class="item-list" id="item-2">
+                        <h5>London</h5>
+                            <p>London is a major global centre of higher education, teaching and research and has the largest concentration of higher education institutes in Europe. According to the QS World University Rankings 2015/16, London has the greatest concentration of top class universities in the world and its international student population of around 110,000 is larger than any other city in the world. A 2014 PricewaterhouseCoopers report termed London the global capital of higher education. A number of world-leading education institutions are based in London. In the 2022 QS World University Rankings, Imperial College London is ranked No. 6 in the world, University College London (UCL) is ranked 8th, and King's College London (KCL) is ranked 37th. All are regularly ranked highly, with Imperial College being the UK's leading university in the Research Excellence Framework ranking 2021.The London School of Economics (LSE) has been described as the world's leading social science institution for both teaching and research. The London Business School is considered one of the world's leading business schools and in 2015 its MBA programme was ranked second-best in the world by the Financial Times. The city is also home to three of the world's top ten performing arts schools (as ranked by the 2020 QS World University Rankings): the Royal College of Music (ranking 2nd in the world), the Royal Academy of Music (ranking 4th) and the Guildhall School of Music and Drama (ranking 6th).</p>
+                            <br><hr><br><br>
+                    </div>
+                    <div class="item-list" id="item-3">
+                        <h5>New York</h5>
+                            <p>New York, often called New York City (NYC), is the most populous city in the United States. It is located at the southern tip of New York State on one of the world's largest natural harbors. The city comprises five boroughs, each coextensive with its respective county. The city is the geographical and demographic center of both the Northeast megalopolis and the New York metropolitan area, the largest metropolitan area in the United States by both population and urban area. New York is a global center of finance and commerce, culture, technology, entertainment and media, academics and scientific output, the arts and fashion, and, as home to the headquarters of the United Nations, international diplomacy.</p>
+                            <br><hr><br><br>
+                    </div>
+                    <div class="item-list" id="item-4">
+                        <h5>Egypt</h5>
+                            <p>Egypt, officially the Arab Republic of Egypt, is a country spanning the northeast corner of Africa and southwest corner of Asia via the Sinai Peninsula. It is bordered by the Mediterranean Sea to the north, Palestine (Gaza Strip) and Israel to the northeast, the Red Sea to the east, Sudan to the south, and Libya to the west; the Gulf of Aqaba in the northeast separates Egypt from Jordan and Saudi Arabia. Cairo is the capital, largest city, and leading cultural center, while Alexandria is the second-largest city and an important hub of industry and tourism.With over 107 million inhabitants, Egypt is the third-most populous country in Africa and 15th-most populated in the world.</p>
+                            <br><hr><br><br>
+                    </div>
+      
+                </div>
+            </section>
+        </div>  
+</main>
+
+<!-- aside -->
+<aside class="container-fluid travel-info">
+
+    <div class="container-fluid grid-container">
+        <div class="cardlist">
+            <div class="title">TOKYO</div>
+                <div class="content">
+                    <ul>
+                        <li><span>Attractions:</span> Tokyo Tower</li>
+                        <li><span>Best Time to Visit:</span> Spring for cherry blossoms (sakura) and autumn for fall foliage are popular choices</li>
+                    </ul>
+                        <div class="rating">
+                            <div><em>Popularity:</em></div>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star fullStar"></i>
+                                <i class="fa-solid fa-star fullStar"></i>
+                                <i class="fa-solid fa-star fullStar"></i>
+                                <i class="fa-solid fa-star fullStar"></i>
+                                <i class="fa-solid fa-star fullStar"></i>
+                            </div>
+                        </div>
+                </div>
+            </div>
+  
+        <div class="cardlist">
+            <div class="title">LONDON</div>
+                    <div class="content">
+                        <ul>
+                            <li><span>Attractions:</span> Tower of London</li>
+                            <li><span>Best Time to Visit:</span> Spring (March-May) and autumn (September-November) offer pleasant weather, but the city is vibrant year-round</li>
+                        </ul>
+                            <div class="rating">
+                                <div><em>Popularity:</em></div>
+                                    <div class="star-rating">
+                                        <i class="fa-solid fa-star fullStar"></i>
+                                        <i class="fa-solid fa-star fullStar"></i>
+                                        <i class="fa-solid fa-star fullStar"></i>
+                                        <i class="fa-solid fa-star fullStar"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                            </div>
+                    </div>
+            </div>
+  
+        <div class="cardlist">
+            <div class="title">NEW YORK</div>
+                     <div class="content">
+                        <ul>
+                            <li><span>Attractions:</span> Times Square</li>
+                            <li><span>Best Time to Visit:</span> The best time to visit is from December to April when there is little rain</li>
+                        </ul>
+                            <div class="rating">
+                                <div><em>Popularity:</em></div>
+                                    <div class="star-rating">
+                                        <i class="fa-solid fa-star fullStar"></i>
+                                        <i class="fa-solid fa-star fullStar"></i>
+                                        <i class="fa-solid fa-star fullStar"></i>
+                                        <i class="fa-solid fa-star fullStar"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                            </div>
+                    </div>
+            </div>
+
+        <div class="cardlist">
+            <div class="title">EGYPT</div>
+                    <div class="content">
+                        <ul>
+                            <li><span>Attractions:</span> Temple of Amun</li>
+                            <li><span>Best Time to Visit:</span> The cooler months from October to April offer the most pleasant temperatures for exploring ancient sites</li>
+                        </ul>
+                            <div class="rating">
+                                <div><em>Popularity:</em></div>
+                                    <div class="star-rating">
+                                        <i class="fa-solid fa-star fullStar"></i>
+                                        <i class="fa-solid fa-star fullStar"></i>
+                                        <i class="fa-solid fa-star fullStar"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</aside>
+
+<footer>
+    <div id='footer-text'>Follow me</div>
+    <ul>
+        <li><i class="fa-brands fa-github"></i></li>
+        <li><i class="fa-brands fa-facebook"></i></li>
+        <li><i class="fa-brands fa-square-instagram"></i></li>
+    </ul>
+</footer>
+
+</div>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        
+    <script src="js/home.js"></script>
+</body>
+</html>
