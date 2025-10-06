@@ -4,39 +4,57 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 
 // function for reloading the designated webpages when click the nav buttons at the right side of the web page
-const itemElement = document.getElementById('navbar-items');
 
-function onClick(e) {
- 
-  for (let i=0; i <= (itemElement.childNodes.length); i++) {
+const itemElements = document.querySelectorAll('.nav-link');
 
-      if (e.target.parentElement.classList.contains('item1')) {
-          window.location.href = 'tokyo-page.html';
-      } else if (e.target.parentElement.classList.contains('item2')) {
+itemElements.forEach(itemElement => { 
+    
+  itemElement.addEventListener('click', (e) => {
+
+    console.log(e.target.textContent);
+
+
+    if (e.target.textContent === 'Tokyo') {
+        window.location.href = 'tokyo-page.html';
+    } else if (e.target.textContent === 'London') {
         window.location.href = 'london-page.html';
-      } else if (e.target.parentElement.classList.contains('item3')) {
+    } else if (e.target.textContent === 'New York') {
         window.location.href = 'new-york-page.html';
-      } else {
-          e.target.parentElement.classList.contains('item4');
-          window.location.href = 'egypt-page.html';
-      }
-      }
+    } else {
+      (e.target.textContent === 'Egypt');
+      window.location.href = 'egypt-page.html';
+    }
+
+    });
+      
+  });
+
+
+
+// function for photo gallery
+const panels = document.querySelectorAll('.panel');
+
+panels.forEach(panel => {
+  panel.addEventListener('click', () => {
+    removeActiveClasses();
+    panel.classList.add('active')});
+});
+
+function removeActiveClasses() {
+  panels.forEach(panel => {
+    panel.classList.remove('active');
+  });
 }
-itemElement.addEventListener('click', onClick);
 
 
+// function for back to home page
+const backbtn = document.getElementById('back-btn');
 
+  backbtn.addEventListener('click', (e) => {
+    window.location.href = 'homepage.html';
+  });
 
- 
-
-
-
-
-
-
-
-
-
+// backbtn.addEventListener('click', pageOnClick);
 
 
 
